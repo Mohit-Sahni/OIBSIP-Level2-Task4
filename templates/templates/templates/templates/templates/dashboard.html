@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Login App{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h3>Welcome, {{ username }} 👋</h3>
+        <p>You have successfully logged in. This is a protected dashboard page.</p>
+        <a class="btn btn-outline-primary" href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
