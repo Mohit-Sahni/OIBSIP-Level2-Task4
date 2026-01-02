@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Login - Login App{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title mb-3">Login</h3>
+        <form method="post" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input class="form-control" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input class="form-control" type="password" name="password" required>
+          </div>
+          <button class="btn btn-success w-100">Login</button>
+        </form>
+        <hr>
+        <div class="text-center">
+          <small>Don't have an account? <a href="{{ url_for('register') }}">Register</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
