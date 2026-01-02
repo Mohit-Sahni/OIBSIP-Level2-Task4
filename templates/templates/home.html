@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home - Login App{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <div class="p-5 bg-light rounded shadow-sm">
+      <h1>Welcome to the Professional Login App</h1>
+      <p class="lead">Register or login to access your dashboard. Secure, simple, and ready for demo.</p>
+      <a href="{{ url_for('register') }}" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+  <div class="col-md-4 d-none d-md-block">
+    <img src="{{ url_for('static', filename='images/bg.jpg') }}" alt="bg" class="img-fluid rounded">
+  </div>
+</div>
+{% endblock %}
