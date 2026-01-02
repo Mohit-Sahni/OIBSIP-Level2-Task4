@@ -1,0 +1,93 @@
+/* ===== Global Styling ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("{{ url_for('static', filename='bg.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* ===== Centering Container ===== */
+.container {
+    width: 380px;
+    margin: 90px auto;
+    padding: 30px 25px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Heading ===== */
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* ===== Input Fields ===== */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Buttons ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* ===== Links ===== */
+a {
+    display: block;
+    margin-top: 18px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Messages (Login success/error) ===== */
+.message {
+    text-align: center;
+    color: yellow;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
